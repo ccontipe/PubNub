@@ -1,6 +1,7 @@
 <!doctype html> 
 	<script src = "https://cdn.pubnub.com/sdk/javascript/pubnub.4.21.7.js"></script>
 	<script>
+
 		var pubnub = new PubNub ({
 			publishKey  : "pub-c-a3caf83b-f6e6-45ab-a52f-80ee24e080f9",
 			subscribeKey: "sub-c-508d94d2-7fd2-4e6e-8a48-ae1eca38b4a7"
@@ -14,7 +15,7 @@
 				}
 			})
 		}
-		
+
 
 		pubnub.addListener({
 			message:function(m){
